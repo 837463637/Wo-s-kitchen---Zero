@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0300D118-1D07-4A3A-B90B-226EB54492A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>wo_s_kitchen_Game</RootNamespace>
+    <AssemblyName>沃的厨房</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>home.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="data\assets\Button\ClassRoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\tags\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\Evaluate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\Evaluate.Designer.cs">
+      <DependentUpon>Evaluate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\FoodMarket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\FoodMarket.Designer.cs">
+      <DependentUpon>FoodMarket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\kitchen.Designer.cs">
+      <DependentUpon>kitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\TutorialCMD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\TutorialCMD.Designer.cs">
+      <DependentUpon>TutorialCMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\TutorialWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\TutorialWindow.Designer.cs">
+      <DependentUpon>TutorialWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\SettingsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data\wo-s-kitchen\windows\SettingsWindow.Designer.cs">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\ImageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="data\wo-s-kitchen\tags\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\Evaluate.resx">
+      <DependentUpon>Evaluate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\FoodMarket.resx">
+      <DependentUpon>FoodMarket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\kitchen.resx">
+      <DependentUpon>kitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\TutorialCMD.resx">
+      <DependentUpon>TutorialCMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\TutorialWindow.resx">
+      <DependentUpon>TutorialWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data\wo-s-kitchen\windows\SettingsWindow.resx">
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ImageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\assets\Characters\Animations\" />
+    <Folder Include="data\assets\Characters\Animators\" />
+    <Folder Include="data\assets\Characters\Audios\" />
+    <Folder Include="data\assets\Characters\Fonts\" />
+    <Folder Include="data\assets\Characters\Textures\" />
+    <Folder Include="data\assets\Characters\Videos\" />
+    <Folder Include="data\assets\common\public\" />
+    <Folder Include="data\assets\docs\" />
+    <Folder Include="data\assets\lang\" />
+    <Folder Include="data\assets\lib\utils\tools\" />
+    <Folder Include="data\assets\Main\src\" />
+    <Folder Include="data\assets\scenes\" />
+    <Folder Include="data\assets\UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\wo-s-kitchen\images\Textures\owl_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\wo-s-kitchen\images\ErrorImage\ImageError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\wo-s-kitchen\images\BackgroundImage\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\wo-s-kitchen\images\Textures\owl_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
