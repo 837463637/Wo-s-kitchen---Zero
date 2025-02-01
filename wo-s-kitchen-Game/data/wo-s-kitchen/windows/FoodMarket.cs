@@ -32,7 +32,7 @@ namespace wo_s_kitchen_Game.data.wo_s_kitchen.windows
         }
         private void buy_grape_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("成功购买9个葡萄！");
+            MessageBox.Show("购买葡萄x9！");
             this.Hide();
             tutorial_kitchen = new Tutorial_kitchen_1();
             tutorial_kitchen.Show();

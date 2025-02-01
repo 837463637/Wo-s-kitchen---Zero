@@ -6,11 +6,13 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using NVorbis;
 using System.IO;
-
+using wo_s_kitchen_Game.data.wo_s_kitchen.windows;
 namespace wo_s_kitchen_Game.data.assets.RoundButton
 {
     public class RoundButton : Button
     {
+
+        private wo_s_kitchen_Game.data.wo_s_kitchen.windows.SettingsWindow.ControlCollection COTSEVBTrackBar;
         private Color _defaultColor;
         private Color _hoverColor;
         private bool _isHover;
@@ -78,7 +80,7 @@ namespace wo_s_kitchen_Game.data.assets.RoundButton
             
            if (mevent.Button == MouseButtons.Left)
            {
-
+                
                 // 左键按下时，按钮颜色变为绿色 播放音效
                 PlayOgg($@"{GameDirectory}\data\assets\Characters\Audios\r7uyrutvjd7yn2x8u2avmb55vewfmd4tb2jh63n5.ogg"); // 播放按钮音效
                 _defaultColor = Color.Transparent; // 默认背景颜色设为透明

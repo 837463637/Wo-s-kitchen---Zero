@@ -27,13 +27,12 @@ namespace wo_s_kitchen_Game
         private IWavePlayer waveOut;
         private VorbisWaveReader vorbisReader;
         bool mim_stop = false; // 标记是否停止播放
-        
+
         public Home()
         {
-            Home_Load(); // 窗体加载事件
+            BtnPlay_Click(); // 调用播放函数
             InitializeComponent(); // 初始化组件
             this.MaximizeBox = false;
-            tutorialWindow = new WhatTutorialNo_ch(); // 在构造函数中初始化 GameWindow
         }
         private void PlayOgg(string filePath) // 定义播放 OGG 音频的函数
         {
@@ -125,6 +124,7 @@ namespace wo_s_kitchen_Game
         {
             this.Hide(); // 隐藏 Home 窗体
             Stop(); // 停止音乐的逻辑
+            tutorialWindow = new WhatTutorialNo_ch(); // 在构造函数中初始化 GameWindow
             tutorialWindow.Show(); // 显示 GameWindow
         }
         private void OpenSettings(object sender, EventArgs e)

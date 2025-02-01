@@ -23,6 +23,7 @@ namespace wo_s_kitchen_Game.data.wo_s_kitchen.windows
         public Tutorial_CMD()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // 窗口无边框
             this.MaximizeBox = false; // 禁止最大化
         }
 
@@ -35,14 +36,14 @@ namespace wo_s_kitchen_Game.data.wo_s_kitchen.windows
             string code = WhatCode_Fa.Text;
             if (code == "FoodMarket")
             {
+                MessageBox.Show("指令输入成功！正在跳转到菜市场界面");
                 Tutorial_FoodMarket = new Tutorial_FoodMarket();
-                MessageBox.Show("指令输入成功，正在执行...");
                 this.Close();
                 Tutorial_FoodMarket.Show();
             }
             else
             {
-                MessageBox.Show("指令输入错误，请重新输入！");
+                MessageBox.Show("请输入正确的指令！");
             }
         }
     }

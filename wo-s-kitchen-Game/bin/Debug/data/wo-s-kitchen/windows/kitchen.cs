@@ -23,6 +23,7 @@ namespace wo_s_kitchen_Game.data.wo_s_kitchen.windows
         public Tutorial_kitchen_1()
         {
             InitializeComponent();
+
             this.MaximizeBox = false; // 禁止最大化
         }
 
@@ -40,8 +41,7 @@ namespace wo_s_kitchen_Game.data.wo_s_kitchen.windows
                 await Task.Delay(200); // 等待 200 毫秒
                 this.Invalidate(); // 刷新界面
             }
-
-            MessageBox.Show("制作成功！");
+            MessageBox.Show("制作完成！");
             this.Close();
             Tutoral_Evaluate = new Tutoral_Evaluate();
             Tutoral_Evaluate.Show();
