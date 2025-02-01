@@ -127,12 +127,6 @@ namespace wo_s_kitchen_Game
             Stop(); // 停止音乐的逻辑
             tutorialWindow.Show(); // 显示 GameWindow
         }
-        
-        private void Home_Load()
-        {
-            BtnPlay_Click(); // 开始播放音乐
-
-        }
         private void OpenSettings(object sender, EventArgs e)
         {
             settingsWindow = new SettingsWindow(); // 在构造函数中初始化 SettingsWindow
