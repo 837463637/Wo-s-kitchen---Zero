@@ -1,3 +1,0 @@
-packages filter=lfs diff=lfs merge=lfs -text
-wo-s-kitchen-Game filter=lfs diff=lfs merge=lfs -text
-wo-s-kitchen-Game.sln filter=lfs diff=lfs merge=lfs -text
